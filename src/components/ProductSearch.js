@@ -1,8 +1,9 @@
-import React, { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from '../App';
+import { SearchContext } from '../providers/SearchProvider';
 
 const ProductSearch = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const { searchTerm, setSearchTerm } = useContext(SearchContext);
   const { isDarkTheme } = useContext(ThemeContext);
   // TODO: Exercice 2.1 - Utiliser le LanguageContext
   

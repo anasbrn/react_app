@@ -1,9 +1,11 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from '../App';
 import useProductSearch from '../hooks/useProductSearch';
+import { SearchContext } from '../providers/SearchProvider';
 
 const ProductList = () => {
   const { isDarkTheme } = useContext(ThemeContext);
+  const { debouncedSearch } = useContext(SearchContext);
   // TODO: Exercice 2.1 - Utiliser le LanguageContext pour les traductions
   
   const { 
@@ -12,7 +14,7 @@ const ProductList = () => {
     error,
     // TODO: Exercice 4.1 - Récupérer la fonction de rechargement
     // TODO: Exercice 4.2 - Récupérer les fonctions et états de pagination
-  } = useProductSearch();
+  } = useProductSearch(debouncedSearch);
   
   if (loading) return (
     <div className="text-center my-4">

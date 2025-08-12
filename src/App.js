@@ -2,6 +2,7 @@ import React, { createContext, useState } from 'react';
 import ProductList from './components/ProductList';
 import ProductSearch from './components/ProductSearch';
 import ThemeToggle from './components/ThemeToggle';
+import { SearchProvider } from './providers/SearchProvider';
 
 // TODO: Exercice 2.1 - Créer le LanguageContext
 
@@ -23,8 +24,10 @@ const App = () => {
           </div>
         </header>
         <main>
-          <ProductSearch />
-          <ProductList />
+          <SearchProvider>
+            <ProductSearch />
+            <ProductList />
+          </SearchProvider>
         </main>
       </div>
     </ThemeContext.Provider>

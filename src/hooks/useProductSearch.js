@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 // TODO: Exercice 3.1 - Créer le hook useDebounce
 // TODO: Exercice 3.2 - Créer le hook useLocalStorage
 
-const useProductSearch = () => {
+const useProductSearch = (debouncedSearch) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -13,7 +13,7 @@ const useProductSearch = () => {
     const fetchProducts = async () => {
       try {
         // TODO: Exercice 4.2 - Modifier l'URL pour inclure les paramètres de pagination
-        const response = await fetch('https://api.daaif.net/products?delay=1000');
+        const response = await fetch(debouncedSearch ? `https://dummyjson.com/products/search?q=${debouncedSearch}` : `https://dummyjson.com/products?delay=1000`);
         if (!response.ok) throw new Error('Erreur réseau');
         const data = await response.json();
         setProducts(data.products);
@@ -25,7 +25,7 @@ const useProductSearch = () => {
     };
 
     fetchProducts();
-  }, []); // TODO: Exercice 4.2 - Ajouter les dépendances pour la pagination
+  }, [debouncedSearch]); // TODO: Exercice 4.2 - Ajouter les dépendances pour la pagination
 
   // TODO: Exercice 4.1 - Ajouter la fonction de rechargement
   // TODO: Exercice 4.2 - Ajouter les fonctions pour la pagination
