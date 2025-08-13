@@ -61,14 +61,12 @@ This makes the search efficient and keeps the components clean and reusable.
 
 ### 🖼️ Screenshots
 
-```markdown
 ![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195502.png)
 ![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195525.png)
 ![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195548.png)
 ![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195604.png)
 ![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195631.png)
 ![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195639.png)
-```
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
@@ -90,14 +88,12 @@ _Votre réponse pour l'exercice 2 :_
 
 ### 🖼️ Screenshots
 
-```markdown
 ![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20082212.png)
 ![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20082314.png)
 ![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20084457.png)
 ![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20084510.png)
 ![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20084521.png)
 ![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20084537.png)
-```
 
 ### Exercice 3 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables
@@ -116,12 +112,10 @@ _Votre réponse pour l'exercice 3 :_
 
 ### 🖼️ Screenshots
 
-```markdown
 ![Search input and result list](./public/images/q3/Capture%20d'écran%202025-08-13%20094409.png)
 ![Search input and result list](./public/images/q3/Capture%20d'écran%202025-08-13%20095847.png)
 ![Search input and result list](./public/images/q3/Capture%20d'écran%202025-08-13%20095931.png)
 ![Search input and result list](./public/images/q3/Capture%20d'écran%202025-08-13%20100007.png)
-```
 
 ### Exercice 4 : Gestion Asynchrone et Pagination
 #### Objectif : Gérer le chargement et la pagination
@@ -139,13 +133,11 @@ _Votre réponse pour l'exercice 4 :_
 
 ### 🖼️ Screenshots
 
-```markdown
 ![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20112839.png)
 ![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20112848.png)
 ![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20112856.png)
 ![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20112952.png)
 ![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20113003.png)
-```
 
 ## Rendu
 
