@@ -132,8 +132,19 @@ _Votre réponse pour l'exercice 3 :_
 
 _Votre réponse pour l'exercice 4 :_
 ```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
+- Create `reloadData` function for reload data and a button for reload the data.
+- Add paramters and helpers for pagination in `useProductSearch` hook.
+- Add navigation buttons for paginate (prevPage, nextPage)
+```
+
+### 🖼️ Screenshots
+
+```markdown
+![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20112839.png)
+![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20112848.png)
+![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20112856.png)
+![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20112952.png)
+![Search input and result list](./public/images/q4/Capture%20d'écran%202025-08-13%20113003.png)
 ```
 
 ## Rendu
