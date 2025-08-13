@@ -51,10 +51,21 @@ Pour chaque exercice :
 - [ ] 1.2 Implémenter le debounce sur la recherche
 - [ ] 1.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 1 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
+We used **React Context** to share the search term between `ProductSearch` (input) and `ProductList` (display). The input value is **debounced** using a custom `useDebounce` hook to limit API calls. The `useProductSearch` hook fetches filtered products based on the debounced term from the [dummyjson.com](https://dummyjson.com) API.
+
+This makes the search efficient and keeps the components clean and reusable.
+
+### 🖼️ Screenshots
+
+You can include screenshots like this:
+
+```markdown
+![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195502.png)
+![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195525.png)
+![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195548.png)
+![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195604.png)
+![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195631.png)
+![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195639.png)
 ```
 
 ### Exercice 2 : Context et Internationalisation
