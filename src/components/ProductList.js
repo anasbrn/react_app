@@ -1,11 +1,12 @@
 import { useContext } from 'react';
-import { ThemeContext } from '../App';
+import { LanguageContext, ThemeContext } from '../App';
 import useProductSearch from '../hooks/useProductSearch';
 import { SearchContext } from '../providers/SearchProvider';
 
 const ProductList = () => {
   const { isDarkTheme } = useContext(ThemeContext);
   const { debouncedSearch } = useContext(SearchContext);
+  const { t } = useContext(LanguageContext);
   // TODO: Exercice 2.1 - Utiliser le LanguageContext pour les traductions
   
   const { 
@@ -59,7 +60,7 @@ const ProductList = () => {
                 <h5 className="card-title">{product.title}</h5>
                 <p className="card-text">{product.description}</p>
                 <p className="card-text">
-                  <strong>Prix: </strong>
+                  <strong>{t('price')}: </strong>
                   {product.price}€
                 </p>
               </div>
@@ -73,17 +74,17 @@ const ProductList = () => {
         <ul className="pagination justify-content-center">
           <li className="page-item">
             <button className="page-link" onClick={prevPage}>
-              Précédent
+              {t('previous')}
             </button>
           </li>
           <li className="page-item">
             <span className="page-link">
-              Page {currentPage} sur {totalPages}
+              {t('page')} {currentPage} {t('of')} {totalPages}
             </span>
           </li>
           <li className="page-item">
             <button className="page-link" onClick={nextPage}>
-              Suivant
+              {t('next')}
             </button>
           </li>
         </ul>
