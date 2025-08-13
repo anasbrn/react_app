@@ -51,13 +51,15 @@ Pour chaque exercice :
 - [ ] 1.2 Implémenter le debounce sur la recherche
 - [ ] 1.3 Documenter votre solution ici
 
+_Votre réponse pour l'exercice 1 :_
+
+```
 We used **React Context** to share the search term between `ProductSearch` (input) and `ProductList` (display). The input value is **debounced** using a custom `useDebounce` hook to limit API calls. The `useProductSearch` hook fetches filtered products based on the debounced term from the [dummyjson.com](https://dummyjson.com) API.
 
 This makes the search efficient and keeps the components clean and reusable.
+```
 
 ### 🖼️ Screenshots
-
-You can include screenshots like this:
 
 ```markdown
 ![Search input and result list](./public/images/q1/Capture%20d'écran%202025-08-12%20195502.png)
@@ -77,8 +79,24 @@ You can include screenshots like this:
 
 _Votre réponse pour l'exercice 2 :_
 ```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
+- Created a `LanguageContext` inside `App.js`.
+- Used `useState` to manage the current language.
+- Add `LanguageSelector` component to make user change the language.
+- Defined a simple translations object with keys for each language.
+- Provided translated text with the `t(key)` function.
+- Implement translation in the targeted components
+
+```
+
+### 🖼️ Screenshots
+
+```markdown
+![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20082212.png)
+![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20082314.png)
+![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20084457.png)
+![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20084510.png)
+![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20084521.png)
+![Search input and result list](./public/images/q2/Capture%20d'écran%202025-08-13%20084537.png)
 ```
 
 ### Exercice 3 : Hooks Personnalisés
