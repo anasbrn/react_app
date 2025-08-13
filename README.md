@@ -108,8 +108,19 @@ _Votre réponse pour l'exercice 2 :_
 
 _Votre réponse pour l'exercice 3 :_
 ```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
+- Create `useDebounce` hook for search debouncing.
+- Implement `useDebounce` hook in search.
+- Create `useLocalStorage` component to store variables in local storage and handling existence in one hook for clean code.
+- Implement `useLocalStorage` in `LanguageContext`to persist the user's last selected language.
+```
+
+### 🖼️ Screenshots
+
+```markdown
+![Search input and result list](./public/images/q3/Capture%20d'écran%202025-08-13%20094409.png)
+![Search input and result list](./public/images/q3/Capture%20d'écran%202025-08-13%20095847.png)
+![Search input and result list](./public/images/q3/Capture%20d'écran%202025-08-13%20095931.png)
+![Search input and result list](./public/images/q3/Capture%20d'écran%202025-08-13%20100007.png)
 ```
 
 ### Exercice 4 : Gestion Asynchrone et Pagination

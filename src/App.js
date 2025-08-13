@@ -1,10 +1,11 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import ProductList from './components/ProductList';
 import ProductSearch from './components/ProductSearch';
 import ThemeToggle from './components/ThemeToggle';
 import { SearchProvider } from './providers/SearchProvider';
 import { translations } from './translations';
 import LanguageSelector from './components/LanguageSelector';
+import useLocalStorage from './hooks/useLocalStorage';
 
 // TODO: Exercice 2.1 - Créer le LanguageContext
 export const LanguageContext = createContext();
@@ -15,8 +16,12 @@ const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   
     // TODO: Exercice 2.2 - Ajouter l'état pour la langue
-    const [language, setLanguage] = useState("en");  
+    const [ storedValue, setStoredValue ] = useLocalStorage("language", "en");
+    const [language, setLanguage] = useState(storedValue);
     const t = (key) => translations[language]?.[key] || key;
+    useEffect(() => {
+      setStoredValue(language);
+    }, [language]);
 
   return (
     <ThemeContext.Provider value={{ isDarkTheme, setIsDarkTheme }}>
